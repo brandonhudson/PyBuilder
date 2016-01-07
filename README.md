@@ -21,7 +21,7 @@ build: relpath/to/file.html
 or
 build: *
 ```
-<br><br>
+<br>
 *Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
 
 ####Bugs/Requests####
