@@ -51,7 +51,7 @@ def buildFile(fileNameIn,fileIn):
 """
 def main():
     print("pyBuilder - HTML")
-    print("============")
+    print("================")
     fileName = input('build: ')
     print()
     if(fileName == '*'):
