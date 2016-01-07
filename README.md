@@ -17,7 +17,7 @@ At this time, pyBuilder reads and inserts the dependent file into the parent fil
 <br>
 3)To build files, use a relative file path (from where the pyBuilder.py file is located) or denote * for all .html files in the builder's current directory
 <br><br>
-*Note: We recommend placing pyBuilder at the beginning of your directory, as the ```<include>``` tags read file location relative to the builder's location within your directory structure.
+*Note: We recommend placing pyBuilder at the beginning of your directory, as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
 
 ####Bugs/Requests####
 Feel free to report any issues or feature requests you may have!
