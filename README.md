@@ -10,7 +10,7 @@ pyBuilder parses a file at build time to look for file dependencies, noted in th
 At this time, pyBuilder reads and inserts the dependent file into the parent file, building an entirely new file (with the same name) inside a newly created build/ directory.
 
 ####How To Use It####
-1) Add pyBuilder.py to your directory
+1) Add pyBuilder.py to your project directory
 <br>
 2) run:
 ```python3 pyBuilder.py```
@@ -22,7 +22,7 @@ or
 build: *
 ```
 <br><br>
-*Note: We recommend placing pyBuilder at the beginning of your directory, as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
+*Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
 
 ####Bugs/Requests####
 Feel free to report any issues or feature requests you may have!
