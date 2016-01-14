@@ -13,7 +13,7 @@ At this time, pyBuilder reads and inserts the dependent file into the parent fil
 1) Add pyBuilder.py to your project directory
 <br><br>
 2) Run:<br>
-```python3 pyBuilder.py path/to/file```
+```python3 pyBuilder.py path/to/file.html```
 <br>
    or
 <br>
