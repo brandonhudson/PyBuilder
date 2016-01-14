@@ -26,3 +26,6 @@ At this time, pyBuilder reads and inserts the dependent file into the parent fil
 
 ####Bugs/Requests####
 Feel free to report any issues or feature requests you may have!
+
+####Updates####
+- 01/13/16 - Moved to command-line argument model rather than utilizing python's input() function.
