@@ -11,15 +11,15 @@ At this time, pyBuilder reads and inserts the dependent file into the parent fil
 
 ####How To Use It####
 1) Add pyBuilder.py to your project directory
-<br>
-2) run:
+<br><br>
+2) Run:<br>
 ```python3 pyBuilder.py path/to/file```
 <br>
    or
 <br>
 ```python3 pyBuilder.py *```
-<br>
-   To build files, use a relative file path (from where the pyBuilder.py file is located) or denote * for all .html files in     pyBuilder's current directory (seen in above code snippets).
+<br><br>
+3) Syntax: use a relative file path (from where the pyBuilder.py file is located) or denote * for all .html files in pyBuilder's current directory (seen in above code snippets).
 
 <br>
 *Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
