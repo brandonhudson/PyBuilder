@@ -1,11 +1,11 @@
 # pyBuilder
 ####What Is It?####
-pyBuilder is an HTML complier, allowing you to dynamically include multiple files (templates) within an HTML document. Because pyBuilder statcially complies the HTML documents after running, any inclusions can be used (.html, .js, .php, etc.).
+pyBuilder is a Static HTML Generation Engine, allowing you to dynamically include multiple files (templates) within an HTML document. Because PyBuilder statcially generates the HTML documents after running, any inclusions can be used (.html, .js, .php, etc.).
 
 ####How It Works####
-pyBuilder parses a file at build time to look for file dependencies, noted in the file by using
+PyBuilder parses a file at build time to look for file dependencies, noted in the file by using
 ```
-  <include file="path/to/file[.html][.js][.php]"></include>
+  <include file="path/to/file[.html][.js][.php]"/>
 ```
 At this time, PyBuilder reads and inserts the dependent file into the parent file, building an entirely new file (with the same name) inside a newly created build/ directory.
 
@@ -19,7 +19,7 @@ At this time, PyBuilder reads and inserts the dependent file into the parent fil
 <br>
 ```python3 pyBuilder.py *```
 <br><br>
-3) Syntax: use a relative file path (from where the pyBuilder.py file is located) or denote * for all .html files in pyBuilder's current directory (seen in above code snippets).
+3) Syntax: use a relative file path (from where the pyBuilder.py file is located) or denote * for all .html files in PyBuilder's current directory (seen in above code snippets). PyBuilder will also copy all of the assets associated with your project into the build/ directory upon generation.
 
 <br>
 *Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
