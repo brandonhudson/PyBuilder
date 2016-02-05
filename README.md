@@ -7,7 +7,7 @@ pyBuilder parses a file at build time to look for file dependencies, noted in th
 ```
   <include file="path/to/file[.html][.js][.php]"></include>
 ```
-At this time, pyBuilder reads and inserts the dependent file into the parent file, building an entirely new file (with the same name) inside a newly created build/ directory.
+At this time, PyBuilder reads and inserts the dependent file into the parent file, building an entirely new file (with the same name) inside a newly created build/ directory.
 
 ####How To Use It####
 1) Add pyBuilder.py to your project directory
@@ -28,4 +28,5 @@ At this time, pyBuilder reads and inserts the dependent file into the parent fil
 Feel free to report any issues or feature requests you may have!
 
 ####Updates####
+- 02/04/16 - PyBuilder now copies all assets into the build/ directory.
 - 01/13/16 - Moved to command-line argument model rather than utilizing python's input() function.
