@@ -122,8 +122,15 @@ def main():
     (options, args) = parser.parse_args()
     
     
+    if(options.filename and options.filename[-1] == "/"):
+        print("error - filename cannot end in '/'")
+        sys.exit()
+    
     if(not options.destination):
         fileDir = "build/"
+    elif(options.destination[-1] != "/"):
+        print("error - destination must end in '/'")
+        sys.exit()
     elif(options.destination == "/"):
         fileDir = ""
     else:
