@@ -1,4 +1,4 @@
-# pyBuilder
+# PyBuilder
 ####What Is It?####
 pyBuilder is a Static HTML Generation Engine, allowing you to dynamically include multiple files (templates) within an HTML document. Because PyBuilder statcially generates the HTML documents after running, any inclusions can be used (.html, .js, .php, etc.).
 
@@ -10,23 +10,30 @@ PyBuilder parses a file at build time to look for file dependencies, noted in th
 At this time, PyBuilder reads and inserts the dependent file into the parent file, building an entirely new file (with the same name) inside a newly created build/ directory.
 
 ####How To Use It####
-1) Add pyBuilder.py to your project directory
+1) Add pb.py to your project directory
 <br><br>
 2) Run:<br>
-```python3 pyBuilder.py path/to/file.html```
+```python3 pb.py```
 <br>
-   or
-<br>
-```python3 pyBuilder.py *```
-<br><br>
-3) Syntax: use a relative file path (from where the pyBuilder.py file is located) or denote * for all .html files in PyBuilder's current directory (seen in above code snippets). PyBuilder will also copy all of the assets associated with your project into the build/ directory upon generation.
-
-<br>
+This will build all files in PyBuilder's directory, copy all assets, and add them to a build/ directory<br><br>
 *Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
+
+####Arguments####
+- Build Single File
+<br>
+```
+-f FILENAME or --file=FILENAME
+```
+- Modify destination directory
+<br>
+```
+-d DESTINATION or --destination=DESTINATION
+```
 
 ####Bugs/Requests####
 Feel free to report any issues or feature requests you may have!
 
 ####Updates####
+- 02/10/16 - Modifies command line syntax structure
 - 02/04/16 - PyBuilder now copies all assets into the build/ directory.
 - 01/13/16 - Moved to command-line argument model rather than utilizing python's input() function.
