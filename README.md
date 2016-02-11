@@ -11,11 +11,9 @@ At this time, PyBuilder reads and inserts the dependent file into the parent fil
 
 ####Basic Usage####
 - Add pb.py to your project directory
-<br><br>
-- Run: 
-```python3 pb.py```
+- Run: ```python3 pb.py```
 - This will build all files in PyBuilder's directory, copy all assets, and add them to a build/ directory<br><br>
-*Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
+- *Note: We recommend placing pyBuilder at the beginning of your directory (with your main HTML files), as the ```<include>``` tags currently read file location relative to the builder's location within your directory structure.
 
 ####Arguments####
 - Build Single File
