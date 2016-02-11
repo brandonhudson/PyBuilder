@@ -136,22 +136,6 @@ def main():
     else:
         fileDir = options.destination
     
-    if(len(sys.argv) < 2):
-        print("usage: pyBuilder.py path/to/file.html")
-        print("or")
-        print("usage: pyBuilder.py *")
-        return 0;
-    elif(sys.argv[1] is None):
-        print("usage: pyBuilder.py path/to/file.html")
-        print("or")
-        print("usage: pyBuilder.py *")
-        return 0;
-    elif(sys.argv[1] == ""):
-        print("usage: pyBuilder.py path/to/file.html")
-        print("or")
-        print("usage: pyBuilder.py *")
-        return 0;
-    
     print("pyBuilder - HTML")
     print("================")
     print()
@@ -170,7 +154,6 @@ def main():
         print("Copying all assets...")
         if options.destination is not "/":
             for root, dirs, files in walklevel(os.getcwd(),0):
-                    print("Dir: "+workingDir) #debug
                     copytree(fileDir,root,workingDir+"/"+fileDir)
           
         print("Assets copied to build directory.")
